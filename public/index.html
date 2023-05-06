@@ -109,24 +109,27 @@ character_array =
 	"!":"m0.7-1.6c0.5 0 0.7 0.3 0.7 0.8 0.1 0.5-0.2 0.8-0.7 0.8s-0.7-0.3-0.7-0.8c0-0.6 0.2-0.8 0.7-0.8zm0.4-1h-0.7l-0.3-6.1h1.3l-0.3 6.1z"
 };
 
-//const pathData = "M 0 100 L 50 0 L 100 100 M 25 60 L 75 60"
-const pathData ="m2 0l3.3-7.6h-4.5v-1h5.5v0.8l-3.2 7.8h-1.1z"
 
+var scale = 5;
+var x = 20;
+var y = 120;
+ctx.lineWidth = 1;
+ctx.strokeStyle = 'black';
+	  
+display("Hello World")
+	  
+function display(txt){
+     for (var i = 0; i < txt.length; i++)
+	{
+	var path = character_array[txt[i]];
+	 x+=20
+  
+   	ctx.translate(x, y);
+    	ctx.scale(scale, scale);
 
-    // Create a new SVG path object and set its path data
-    const path = new Path2D(pathData);
-
-    // Scale and position the path on the canvas
-    const scale = 9;
-    const x = 120;
-    const y = 120;
-    ctx.translate(x, y);
-    ctx.scale(scale, scale);
-
-    // Set the stroke style and draw the path on the canvas
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = 'black';
-    ctx.stroke(path);
+   	 ctx.stroke(path);
+	}
+}
   </script>
 </body>
 </html>
