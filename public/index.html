@@ -115,19 +115,17 @@ var x = 20;
 var y = 120;
 ctx.lineWidth = 1;
 ctx.strokeStyle = 'black';
-	  
+var path,i	  
 display("Hello World")
 	  
 function display(txt){
-     for (var i = 0; i < txt.length; i++)
-	{
-	var path = character_array[txt[i]];
-	 x+=20
-  
+	alert(txt)
+     for (i = 0; i < txt.length; i++){
+	path = character_array[txt[i]];
+	x+=20
    	ctx.translate(x, y);
     	ctx.scale(scale, scale);
-
-   	 ctx.stroke(path);
+   	ctx.stroke(path);
 	}
 }
   </script>
