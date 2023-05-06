@@ -110,14 +110,25 @@ character_array =
 };
 
 
-var scale = 9;
+var scale = 2;
 var x = 20;
 var y = 120;
 ctx.lineWidth = 1;
 ctx.strokeStyle = 'black';
 var path,i	  
-display("Hello World")
+display("H")
+
+function display(txt){
+	
+  	path = character_array[txt];
+	
+	alert(path)
+   	ctx.translate(x, y);
+    	ctx.scale(scale, scale);
+   	ctx.stroke(path);
+	}
 	  
+	  /*
 function display(txt){
 	
      for (i = 0; i < txt.length; i++){
@@ -130,6 +141,7 @@ function display(txt){
    	ctx.stroke(path);
 	}
 }
+*/
   </script>
 </body>
 </html>
