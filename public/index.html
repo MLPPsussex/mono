@@ -120,13 +120,14 @@ display("Hello World")
 	  
 function display(txt){
 	alert(txt)
-     for (i = 0; i < txt.length; i++){
-	path = character_array[txt[i]];
-	x+=20
+  //   for (i = 0; i < txt.length; i++){
+  //	path = character_array[txt[i]];
+//	x+=20
+	path = character_array["H"];
    	ctx.translate(x, y);
     	ctx.scale(scale, scale);
    	ctx.stroke(path);
-	}
+//	}
 }
   </script>
 </body>
