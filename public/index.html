@@ -147,15 +147,15 @@ function scalr(svgStr1){
  var retStr="", svgStr2=""
  var num ="",ch
  
- for(=j0;j<svgStr1.length; j++){
+ for(j=0;j<svgStr1.length; j++){
 	 ch=svgStr1[j]
 	 if(ch=="-"){svgStr2+=" "}
 	 svgStr2+=ch
  } 
  alert (svgStr1+"***"+svgStr2)
  return svgStr2
-/*   for(i=0;i<svgStr2.length; i++){
-        ch=svgStr2[i]
+/*   for(j=0;j<svgStr2.length; j++){
+        ch=svgStr2[j]
 	chc=ch.charCodeAt(0)
 	if((chc-52.5)**2<25 || chc==45 || chc==46){num+=ch}
 	else{
