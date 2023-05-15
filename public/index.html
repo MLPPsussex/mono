@@ -117,9 +117,9 @@ ctx.lineWidth = 1;
 ctx.strokeStyle = 'black';
 var path
 var i	  
-display("H")
+display("Hello World")
 
-function display(txt){
+/*function display(txt){
 	
   	path = new Path2D(character_array[txt])
 	
@@ -128,12 +128,12 @@ function display(txt){
     	ctx.scale(scale, scale);
    	ctx.stroke(path);
 	}
+	  */
 	  
-	  /*
 function display(txt){
 	
      for (i = 0; i < txt.length; i++){
-  	path = character_array[txt[i]];
+  	path = new Path2D( character_array[txt[i]] )
 	
 	alert(path)
 	x+=20
@@ -142,7 +142,7 @@ function display(txt){
    	ctx.stroke(path);
 	}
 }
-*/
+
   </script>
 </body>
 </html>
