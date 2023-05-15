@@ -134,7 +134,7 @@ function display(txt){
      for (i = 0; i < txt.length; i++){
 	     pth1="m"+x+" "+y+" "
 	     pth2=scalr( character_array[txt[i]] )
-  	path = new Path2D(pth + pth2 )
+  	path = new Path2D(pth1 + pth2 )
    	ctx.stroke(path);
 	x+=7
 	}
@@ -154,7 +154,7 @@ function scalr(svgStr1){
 	chc=ch.charCodeAt(0)
 	if((chc-51.5)**2<25 || chc==45 || chc==46){num+=ch}
 	else{
-		  if(num!=""){retStr+=" "+num+" "}
+		  if(num!=""){retStr+=num+" "}
 		  num=""; retStr+=ch }
 	  }
 	alert(svgStr1+"->"+retStr)
