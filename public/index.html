@@ -154,7 +154,7 @@ function scalr(svgStr1){
 	chc=ch.charCodeAt(0)
 	if((chc-51.5)**2<25 || chc==45 || chc==46){num+=ch}
 	else{
-		  if(num!=""){retStr+=num+" "}
+		  if(num!=""){retStr+=num}
 		  num=""; retStr+=ch }
 	  }
 	alert(svgStr1+"->"+retStr)
