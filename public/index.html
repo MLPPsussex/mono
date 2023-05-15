@@ -150,7 +150,7 @@ function scalr(svgStr1){
 	 if(ch=="-" && svgStr1[i-1]!=" "){svgStr2+=" "}
 	 svgStr2+=ch
  }
-   for(i=0;i<svgStr2.length; i++){
+/*   for(i=0;i<svgStr2.length; i++){
         ch=svgStr2[i]
 	chc=ch.charCodeAt(0)
 	if((chc-51.5)**2<25 || chc==45 || chc==46){num+=ch}
@@ -159,7 +159,9 @@ function scalr(svgStr1){
 		  num=""; retStr+=ch }
 	  }
 	alert(svgStr1+"-> "+retStr)
-	return retStr
+	*/
+	
+	return svgStr2 // retStr
 }
 	
   </script>
