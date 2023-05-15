@@ -121,8 +121,8 @@ var i
 display("The library is starting")
 	  setTimeout(show,1)
 function show(){
-	for(k=0;k<30;k++){
-	  y+=18
+	for(k=0;k<22;k++){
+	  y+=20
 	  x=10
 	  display("Hello World 0123456789")
 	}
@@ -137,7 +137,7 @@ function display(txt){
 		      scalr( character_array[txt[i]] )
   	path = new Path2D(pth1 + pth2 )
    	ctx.fill(path);
-	x+=20
+	x+=8*scale
 	}
 }
 
