@@ -133,7 +133,8 @@ function display(txt){
 
      for (i = 0; i < txt.length; i++){
 	     pth1="m"+x+" "+y+" "
-	     pth2= scalr( character_array[txt[i]] )
+	     pth2=character_array[txt[i]]+" "
+		     // scalr( character_array[txt[i]] )
   	path = new Path2D(pth1 + pth2 )
    	ctx.stroke(path);
 	x+=7
@@ -141,6 +142,7 @@ function display(txt){
 }
 
 function scalr(svgStr1){
+	svgStr1+=" "
  var retStr="", svgStr2=""
  var num ="",ch
  for(i=0;i<svgStr1.length; i++){
