@@ -143,7 +143,7 @@ function display(txt){
 }
 
 function scalr(svgStr1){
-// svgStr1+=" "
+ svgStr1+=" "
  var retStr="", svgStr2=""
  var num ="",ch
  
@@ -152,9 +152,8 @@ function scalr(svgStr1){
 	 if(ch=="-"){svgStr2+=" "}
 	 svgStr2+=ch
  } 
- alert (svgStr1+"***"+svgStr2)
- return svgStr2
-/*   for(j=0;j<svgStr2.length; j++){
+
+  for(j=0;j<svgStr2.length; j++){
         ch=svgStr2[j]
 	chc=ch.charCodeAt(0)
 	if((chc-52.5)**2<25 || chc==45 || chc==46){num+=ch}
@@ -163,10 +162,8 @@ function scalr(svgStr1){
 		  num=""; retStr+=ch }
 	  }
 	
+	return retStr
 	
-	alert(svgStr1+"-> "+svgStr2)
-	return svgStr2 // retStr
-	*/
 }
 	
   </script>
