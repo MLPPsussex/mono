@@ -148,7 +148,7 @@ function scalr(svgStr1){
  var num ="",ch
  for(i=0;i<svgStr1.length; i++){
 	 ch=svgStr1[i]
-	 if(ch=="-" && svgStr1[i-1]!=" "){svgStr2+=" "}
+	 if(i>0){ if(ch=="-" && svgStr1[i-1]!=" "){svgStr2+=" "} }
 	 svgStr2+=ch
  }
 /*   for(i=0;i<svgStr2.length; i++){
