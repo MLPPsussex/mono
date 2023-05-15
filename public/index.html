@@ -117,7 +117,7 @@ ctx.lineWidth = 1;
 ctx.strokeStyle = 'black';
 var path
 var i	  
-display("Hello World")
+display("012 Wor")
 
 /*function display(txt){
 	
@@ -132,13 +132,30 @@ function display(txt){
 //	ctx.scale(scale, scale);
 
      for (i = 0; i < txt.length; i++){
-	     pth="m"+x+" "+y+" "
-  	path = new Path2D(pth+ character_array[txt[i]] )
+	     pth1="m"+x+" "+y+" "
+	     pth2=scaler(character_array[txt[i]]
+  	path = new Path2D(pth + path2 )
    	ctx.stroke(path);
 	x+=7
 	}
 }
 
+function scaler(svgCh){
+ svgCh+=" "
+ var retStr=""
+ var num ="",ch
+   for(i=0;i<svgCh.length; i++){
+        ch=svgCh[i]
+	chc=ch.charCodeAt(0)
+	if((chc-51.5)**2<25 || chc==45 || chc==46){num+=ch}
+	else{
+		  if(num!=""){retStr=" "+num+" "}
+		  num=""; retstr+=ch }
+	  }
+	alert(svgCh+"->"+retStr)
+	return retStr
+}
+	
   </script>
 </body>
 </html>
